@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+    
+  <div class="container">
+    <div class="section center-align">
+      <h1>{{data.user.fullName}}</h1>
+      <img src="Image_1.jpg" alt="Photo with Table Mountain" class="responsive-img">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6">
+          <h2>{{data.city.name}}</h2>
+          <p>{{data.city.description}}</p>
+        </div>
+        <div class="col s12 m6">
+          <img src="Opera House_img1.jpeg" alt="City Photo" class="responsive-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6">
+          <h2>Foreign Language: {{data.foreignLanguage.language}}</h2>
+        </div>
+        <div class="col s12 m6">
+          <table class="striped">
+            <thead>
+              <tr>
+                <th>English</th>
+                <th>{{data.foreignLanguage.language}}</th>
+              </tr>
+            </thead>
+            <tbody>
+                {{#each data.foreignLanguage.phrases}}
+              <tr>
+                <td>{{this.englishPhrase}}</td>
+                <td>{{this.foreignLanguage}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Favourite Subjects</h2>
+      <h4>Qualification: {{data.qualification.name}}</h4>
+      <div class="row">
+        {{#each data.favouriteSubjects}}
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="Chemistry_Sub1.jpeg" alt="Subject 1 Photo" class="responsive-img">
+            </div>
+            <div class="card-content">
+              <span class="card-title">{{this.name}}</span>
+              <p>{{this.description}}</p>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      <!-- <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="English_Sub2.jpeg" alt="Subject 2 Photo" class="responsive-img">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Subject 2</span>
+              <p>Description of why this is a favourite subject.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="CogPsych_Sub3.jpeg" alt="Subject 3 Photo" class="responsive-img">
+            </div>
+          <div class="card-content">
+              <span class="card-title">Subject 3</span>
+              <p>Description of why this is a favourite subject.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

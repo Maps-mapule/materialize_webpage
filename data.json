@@ -1,0 +1,42 @@
+{
+    "user" : {
+        "fullName": "Mapule Tracy-Lee Maluleke",
+        "photo" : "Image_1.jpg"
+    },
+    "city" : {
+        "name" : "Sydney",
+        "photo" : "Opera House_img1.jpeg",
+        "description" : "Sydney, Australia's largest and most beautiful city, that has captivating views of the Sydney Opera House and the Sydney Habour Bridge. It has natural beauties and urban sophistication that draws the attention of the tourists and locals alike'"
+    },
+    "foreignLanguage" : {
+        "language" : "Mandarin",
+        "phrases" : [{
+            "englishPhrase" : "The culture here is so beautiful",
+            "foreignLanguage" : "这里的文化太美了 (Zhèlǐ de wénhuà tài měi le)."
+        },
+        {
+            "englishPhrase" : "Is there loadshedding here?",
+            "foreignLanguage" : "这里有停电吗？(Zhèlǐ yǒu tíngdiàn ma?)"
+        }]
+    },
+    "qualification" : {
+        "name" : "Bachelor of Arts in Psychology"
+    },   
+    "favouriteSubjects" : [
+        {
+            "name" : "Chemistry",
+            "photo" : "Chemistry_Sub1.jpeg",
+            "description" : "A very intruiging and complex subject that provides studies of matter, molecules, and atoms which form part of the building blocks that form our world. This science subject provides understanding for the microscopic and macroscopic mysteries of our universe."
+        },
+        {
+            "name" : "English",
+            "photo" : "English_Sub2.jpeg",
+            "description" : "A language subject that opens the door to learning of literature, language and expression through story-telling using vast mediums."
+        },
+        {
+            "name" : "Cogntive Psychology",
+            "photo" : "CogPsych_Sub3.jpeg",
+            "description" : "Cognitive Psychology provides the explanation of how human beings think, learn and percieve the world at large. It provides studies of how the brain processes information, and it seeks to explain human behaviour."
+        }
+    ]
+}
